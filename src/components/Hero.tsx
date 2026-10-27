@@ -7,6 +7,7 @@ export function Hero() {
         <span>INDEPENDENT PORTFOLIO</span>
         <span>VOL. 01 / INTRODUCTION</span>
       </div>
+      <div className="hero-shapes" aria-hidden="true"><span className="shape shape-flower"/><span className="shape shape-ring"/><span className="shape shape-diamond"/></div>
       <h1 id="hero-title">
         A personal
         <br />

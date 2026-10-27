@@ -1,6 +1,6 @@
 # Editorial personal portfolio
 
-A complete React, Vite and TypeScript portfolio inspired by editorial magazine spreads: expressive Archivo Black headlines, Georgia italics, warm paper, deep green, original abstract artwork and asymmetrical project layouts. No invented credentials, projects or personal facts are included. No component library, tracking, external APIs or contact backend is required.
+A complete React, Vite and TypeScript portfolio inspired by editorial magazine spreads: playful Righteous headlines with Archivo Black fallback, Georgia italics, warm paper, cobalt, citrus yellow, orange and pink, original abstract artwork and asymmetrical project layouts. No invented credentials, projects or personal facts are included. No component library, tracking, external APIs or contact backend is required.
 
 ## Current status
 
@@ -95,7 +95,7 @@ Replace every bracketed placeholder throughout the data file, delete placeholder
 
 The build writes actual title, description, Open Graph metadata, optional canonical URL/social image, and robots directives into the generated HTML so social crawlers do not need JavaScript. Preview mode uses noindex,nofollow. Twitter large-image metadata is emitted with a configured social image. No fictitious Person schema is generated.
 
-Design text such as the section titles is in components. Colors, spacing and fonts are CSS variables in `src/styles/global.css`. Archivo Black is bundled with its SIL Open Font License; Georgia and Arial use system font fallbacks. No font provider receives visitor requests.
+Design text such as the section titles is in components. Colors, spacing and fonts are CSS variables in `src/styles/global.css`. Righteous and Archivo Black are bundled with their SIL Open Font Licenses; Georgia and Arial use system font fallbacks. No font provider receives visitor requests.
 
 ## Test and build
 

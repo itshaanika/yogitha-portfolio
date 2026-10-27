@@ -18,3 +18,7 @@ Completed 27 October 2026.
 ## Limits
 
 No live email address or project destinations exist to test delivery/external services. No exhaustive screen-reader or automated WCAG audit, real-device matrix or hosted performance audit was performed. Preview content deliberately remains marked and noindexed. Hosting and the final live URL require an intended GitHub repository and successful Actions deployment.
+
+## Color and typography update
+
+Added a self-hosted Righteous display font, brighter section colors, original CSS cut-paper shapes and recolored SVG assets. Tests and production build passed again. Browser checks at 390px and 1440px showed no horizontal overflow or console errors.

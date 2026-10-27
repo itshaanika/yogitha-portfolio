@@ -20,12 +20,12 @@ body {
   line-height: 1.6;
 }
 :root {
-  --paper: #eeeae1;
-  --ink: #20251f;
+  --paper: #fff5df;
+  --ink: #252617;
   --green: #174c3d;
-  --pink: #d9a3b1;
-  --line: #b7b9ac;
-  --display: Archivo, "Arial Black", sans-serif;
+  --pink: #f49ab4;
+  --line: #a5ad87;
+  --display: Righteous, Archivo, "Arial Black", sans-serif;
   --serif: Georgia, "Times New Roman", serif;
   --gutter: clamp(24px, 5vw, 88px);
 }
@@ -597,3 +597,40 @@ footer {
     transition: none !important;
   }
 }
+
+/* Playful editorial palette and cut-paper geometry. */
+@font-face {
+  font-family: Righteous;
+  src: url("../assets/righteous.ttf") format("truetype");
+  font-weight: 400 900;
+  font-display: swap;
+}
+:root { --orange: #f66835; --yellow: #f4cf38; --blue: #2248a3; }
+.hero { position: relative; isolation: isolate; }
+.hero h1 { font-weight: 400; letter-spacing: -.055em; }
+.hero h1 .serif { color: var(--blue); }
+.hero-shapes { position: absolute; inset: 0; pointer-events: none; z-index: -1; overflow: hidden; }
+.shape { position: absolute; display: block; }
+.shape-flower { width: clamp(100px, 14vw, 210px); aspect-ratio: 1; background: var(--orange); top: 8%; right: 7%; transform: rotate(12deg); clip-path: polygon(50% 0%,61% 20%,79% 7%,80% 31%,100% 30%,88% 50%,100% 68%,77% 70%,79% 94%,59% 82%,50% 100%,39% 80%,18% 94%,21% 70%,0% 69%,12% 50%,0% 31%,23% 29%,20% 7%,40% 20%); }
+.shape-ring { width: 120px; aspect-ratio: 1; border: 23px solid var(--yellow); border-radius: 50%; bottom: 15%; left: 40%; }
+.shape-diamond { width: 34px; aspect-ratio: 1; background: var(--blue); bottom: 8%; right: 6%; transform: rotate(45deg); }
+.wordmark { color: var(--blue); font-weight: 400; letter-spacing: -2px; }
+.about { background: #d5df95; }
+.projects { background: #fff5df; }
+.section-title { font-weight: 400; }
+.section-title em { color: var(--blue); }
+.about .section-title em { color: var(--green); }
+.section-label { font-weight: 700; }
+.button { background: var(--blue); }
+.contact { background: #f49ab4; color: var(--ink); position: relative; overflow: hidden; }
+.contact h2 { font-weight: 400; }
+.contact em { color: var(--blue); }
+.contact::after { content: ''; width: 170px; height: 170px; border: 27px solid var(--orange); border-radius: 50%; position: absolute; right: -75px; top: -80px; pointer-events: none; }
+footer { background: var(--yellow); }
+.project-1 figure { background: var(--blue); padding: 14px; transform: rotate(-2deg); }
+.project-2 figure { background: var(--orange); padding: 14px; transform: rotate(2deg); }
+.project figcaption { letter-spacing: .08em; }
+.project-1 figcaption { color: #fff5df; border-color: #8098d1; }
+.project-2 figcaption { color: #252617; border-color: #9e3818; }
+@media(max-width:800px){ .shape-ring { left: 44%; bottom: 8%; width: 80px; border-width: 16px; } .shape-flower{top: 6%;right: 5%;opacity: .85;} }
+@media(max-width:560px){ .shape-flower{width:80px;top: 28%;right: auto;left: 5%;opacity:1;} .shape-ring{left: auto;right: 3%;bottom: 7%;width:65px;border-width:13px;} .shape-diamond{display:none;} .hero h1{font-size:clamp(43px,10.8vw,61px);} .hero h1 .serif{margin-left:0;} .hero-intro{position:relative;z-index:1;} .project-1 figure,.project-2 figure{padding:10px;transform:none;} }
